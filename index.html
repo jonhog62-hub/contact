@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & SMS Consent</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .consent-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            margin-top: 20px;
+        }
+        .consent-text {
+            font-size: 14px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            width: 90%;
+        }
+        button {
+            background-color: #004a99;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+        .footer-links {
+            margin-top: 30px;
+            font-size: 13px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .footer-links a {
+            color: #004a99;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+    
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="904-xxx-xxxx" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message">How can we help you?</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <div class="consent-box">
+        <input type="checkbox" id="sms-consent" name="sms-consent" required>
+        <label class="consent-text" for="sms-consent">
+            I agree to receive SMS messages from 1landbuyerusa.com for updates and information regarding my inquiry. 
+            Message and data rates may apply. Message frequency varies. 
+            Text HELP for help or STOP to opt-out at any time. 
+            View our <a href="https://www.1landbuyerusa.com/privacy-policy" target="_blank">Privacy Policy</a> 
+            and <a href="https://www.1landbuyerusa.com/terms-and-conditions" target="_blank">Terms of Service</a>.
+        </label>
+    </div>
+
+    <button type="submit">Submit Request</button>
+
+    <div class="footer-links">
+        <a href="https://www.1landbuyerusa.com/privacy-policy">Privacy Policy</a> | 
+        <a href="https://www.1landbuyerusa.com/terms-and-conditions">Terms & Conditions</a>
+    </div>
+
+</body>
+</html>
